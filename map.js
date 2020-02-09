@@ -26,7 +26,7 @@ const assertArrayEqual = function(array1, array2) {
 const words = ["ground", "control", "to", "major", "tom"];
 
 const testwords = function(word) {
-  console.log(word)
+  //console.log(word)
 return `Hello  ${word}`
 }
 

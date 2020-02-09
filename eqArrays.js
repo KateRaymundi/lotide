@@ -10,22 +10,19 @@ const eqArrays = function(arr1, arr2){
 
   let result;
   if(arr1.length !== arr2.length){
-    result = false
+    return false
   }
-  arr1.forEach(function(readArr1) { // this is called callback function  
-  
-    arr2.forEach(function(readArr2) {
-  
-      if(arr1[readArr1] === arr2[readArr2]){
-        result = true
-      } else {
-        result = false
-      }
-    });
-  });
+  for (i = 0; i < arr1.length; i++){
+    if(arr1[i] === arr2[i]){
+      result = true
+    }
+    else {
+      return false
+    }
+  }
   return result
 } 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
+//eqArrays([1, 2, 3], [1, 2, 3]) // => true
+console.log(eqArrays([2, 3], [2, 4])) // => false
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true)
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false)

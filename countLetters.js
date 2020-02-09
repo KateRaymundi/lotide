@@ -7,8 +7,8 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function (sentence){
-  sumOfLetters = {}
-  for (letter of sentence){
+  let sumOfLetters = {}
+  for (let letter of sentence){
     console.log("letter", letter)
     console.log("sumOfLetters", sumOfLetters)
     console.log("sumOfLetters[letter]", sumOfLetters[letter])
@@ -17,6 +17,7 @@ const countLetters = function (sentence){
     if(letter !== " "){
       if (sumOfLetters[letter] ){
         sumOfLetters[letter] += 1
+        console.log("sumOfLetters[letter]", sumOfLetters[letter])
         }else {
           sumOfLetters[letter] = 1
           //console.log(result)
