@@ -1,7 +1,7 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "",
+  "description": "Implement functions in lotide, implemented in LHL bootcamp",
   "main": "assertArrayEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/KateRaymundi/lotide.git"
   },
-  "author": "",
+  "author": "@kate_raymundi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KateRaymundi/lotide/issues"
