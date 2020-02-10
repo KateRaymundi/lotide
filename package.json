@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "@kate_raymundi/lotide",
   "version": "1.0.0",
   "description": "Implement functions in lotide, implemented in LHL bootcamp",
   "main": "assertArrayEqual.js",
